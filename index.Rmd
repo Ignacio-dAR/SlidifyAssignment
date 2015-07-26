@@ -1,0 +1,75 @@
+---
+title       : ShinyApps_"Cosmo Test"
+subtitle    : Project_Assignment
+author      : Ignacio de Andrés
+job         : Consultant
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : default       # 
+widgets     : [quiz, bootstrap]  # {mathjax, quiz, bootstrap}
+mode        : standalone # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Cosmo Test: such a classic
+
+"Cosmo Test" is a shiny app based on a tremendously famous topic: Cosmopolitan tests. 
+
+For many years I've seen friends and relatives alike read and fill these tests to finally find some weird result.
+
+In this case, the App works in the following way:
+
+a) Answer the questions included in the left side of the screen by chosing one of the 4 options suggested.
+b) Press the "submit" button.
+c) Learn about yourself by reviewing your results in the right side of the screen.
+
+Let's check it out!!
+
+
+---&radio
+
+## An Example
+
+This is one of the questions included in the app (more comming in later updates):
+Try to guess mine!
+
+ Favorite Holidays Destination:
+
+1. Rome
+2. New York
+3. Gaborone
+4. _Arctic Pole_
+
+
+
+--- .class #id
+
+## Some secrets revealed
+
+This version of the Cosmo Test has a predefine set of rules to calculate which combination yields each of the possible results, and collect all data from the input variables accordingly, make the calculations and provide the resulting messages.
+
+Below you can see some of the code, and you can find the initial profiles included on it:
+
+
+```{r}
+
+# output$Result1<-renderText({
+#    default <- "Undefined"
+#    r <- list("1" = "Romantic", "2" = "Hypster", "3"="Adventurer", "4"="Penguin")[[Type()]]
+#    ifelse(is.null(r), default, r)
+#  })
+```
+
+
+
+--- .class #id
+
+## Go on and try it!
+
+<iframe src= 'https://ignacio1981.shinyapps.io/Asignment_Data_Products' height='500px'></iframe>
+
+
+
+
+
+
